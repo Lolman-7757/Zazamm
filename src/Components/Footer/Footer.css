@@ -1,0 +1,175 @@
+footer {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    /* min-height: 1000vh; */
+    background-image: url('https://wallpaperboat.com/wp-content/uploads/2020/04/dark-minimalist-02.jpg');
+}
+.footer_wrapper{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.703);
+}
+footer .container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+footer a {
+    color: white;
+}
+footer .logo{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0);
+}
+footer .logo img{
+    width: 100%;
+    height: 100%;
+}
+footer .logo_title{
+    font-size: 2.5rem;
+}
+footer .logo_descr{
+    font-size: 1.5rem;
+}
+.footer_media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer_media-socials{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.footer_media-socials a{
+    transition: linear all .2s;
+    margin-left: 40px;
+}
+.footer_media-socials a:nth-child(1){
+    margin-left: 0;
+}
+.footer_media-socials a:hover{
+    transform: scale(1.2);
+}
+
+.footer_navigation{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.footer_navigation li{
+    font-size: 1.3rem;
+    transition: linear all .2s;
+    margin-top: 25px;
+}
+.footer_navigation li:hover{
+    border-bottom: 2px solid white;
+}
+.footer_navigation li:nth-child(1){
+    margin-top: 0;
+}
+.footer_contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.footer_contact li{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.footer_contact li:nth-child(1){
+    margin-top: -20px;
+    padding: 0;
+}
+.footer_contact a, .footer_contact p{
+    margin-left: 15px;
+}
+@media(max-width:992px){
+    footer .container{
+        flex-wrap: wrap;
+    }
+    .footer_contact{
+        margin-top: 50px;
+    }
+}
+@media(max-width:768px){
+    .footer_navigation{
+        margin-top: 20px;
+    }
+    footer .logo{
+        margin-left: -20px;
+    }
+}
+@media(max-width:666px){
+    .footer_copyright{
+        flex-direction: column !important;
+    }
+    .footer_copyright h2:last-child{
+        margin-top: 20px;
+        text-align: center !important;
+    }
+}
+@media(max-width: 480px){
+    .footer_wrapper .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_media-socials{
+        margin-left: 0;
+        justify-content: space-around;
+    }
+    .footer_navigation{
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+}
+
+.footer_contact-adddress{
+    max-width: 500px;
+}
+.footer_copyright{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 20px 50px;
+    font-size: 0.7rem;
+}
+.footer_copyright h2{
+
+    font-weight: 400;
+}
+.footer_copyright a{
+    border-bottom: 2px solid white;
+}
